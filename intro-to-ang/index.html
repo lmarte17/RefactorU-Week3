@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Intro to Angular</title>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.8/angular.js"></script>
+        <script src="js/main.module.js"></script>
+        <script src="js/main.controller.js"></script>
+    </head>
+    
+    <body ng-app='myApp'>
+        <div ng-controller="Ctrl">
+        <h1>Intro to Angular</h1>
+            <button ng-click="myFunc()">Click!</button>
+        
+        <div ng-click="ng-cloak" ng-model="cloak">   
+            <h1>{{ $scope.cloakFunc.message }}</h1>
+        </div>
+        
+        </div>
+    </body>
+</html>
