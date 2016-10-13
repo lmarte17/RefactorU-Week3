@@ -1,15 +1,5 @@
-var app = angular.module("myApp", []);
-
-    app.controller('Ctrl', function($scope) {
-        $scope.myFunc = function() {
-        console.log("gotcha");
-        }
-    
-        $scope.cloakFunc = {
-            message: 'How you like me now!?!'
-        }
-    })
-    
-
-    
-
+angular.module("myApp", [])
+    .controller('appController', function appController() {
+        var message = 'gotcha';
+        console.log(message);
+    };);

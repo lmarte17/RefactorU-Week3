@@ -1,6 +1,8 @@
 angular.module('myApp')
-    .controller('angApp', angCtrl);
-    
-    function clickFunc(){
-        console.log()
-    }
+    .controller('appController', appController);
+
+
+function appController() {
+    var ctrl = this;
+    console.log('gotcha');
+};
